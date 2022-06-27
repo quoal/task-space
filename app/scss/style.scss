@@ -21,7 +21,10 @@
   }
 }
 .info-slider {
+  height: 546px;
+  padding-top: 100px;
   background: linear-gradient(100.68deg, #5991ff 13.6%, #0050ef 94.69%);
+  width: 100vw;
   span {
     display: block;
   }
@@ -29,7 +32,6 @@
     font-weight: 600;
     font-size: 40px;
     color: #ffffff;
-    padding-top: 100px;
     line-height: 56px;
     max-width: 580px;
     margin-bottom: 24px;
@@ -37,6 +39,7 @@
   &__descr {
     color: #ffffff;
     margin-bottom: 48px;
+    max-width: 480px;
   }
 
   &__btn {
@@ -44,5 +47,131 @@
     padding: 16px 32px;
     background-color: #ffffff;
     border-radius: 10px;
+    margin-bottom: 130px;
+    font-weight: 600;
+    line-height: 19px;
+  }
+}
+.main {
+  background-color: #f7f9ff;
+}
+.titles {
+  padding-top: 40px;
+
+  &__search {
+    color: #888888;
+    display: flex;
+    font-weight: 600;
+    margin-bottom: 56px;
+  }
+
+  .prices {
+    color: #888888;
+    margin-left: 20px;
+    display: inline-block;
+    width: 336px;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 10px;
+
+    &__minus {
+      display: inline-block;
+      position: relative;
+      padding-right: 15px;
+      &::before {
+        content: '';
+        padding-right: 15px;
+        position: absolute;
+        top: 0;
+        left: -26px;
+        background-image: url('../images/minus.svg');
+      }
+    }
+    input {
+      max-width: 132px;
+      border: none;
+      outline: none;
+    }
+  }
+}
+.search-name {
+  color: #888888;
+  display: inline-block;
+  max-width: 335px;
+  padding: 16px;
+  border-radius: 10px;
+  border: none;
+}
+.titles__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &-item {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 24px;
+    width: 572px;
+    margin-bottom: 20px;
+  }
+  &-date {
+    color: #10b2d0;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    margin-bottom: 8px;
+  }
+  &-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 16px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  &-text {
+    color: #888888;
+    margin-bottom: 24px;
+  }
+
+  &-auther {
+    color: #0050ef;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    background-color: rgba(0, 80, 239, 0.06);
+    border-radius: 10px;
+    padding: 8px 20px;
+  }
+}
+.footer {
+  padding: 48px 0 48px;
+  background-color: #011846;
+  color: #ffffff;
+  &__additionally {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-comapny {
+      font-size: 14px;
+      line-height: 20px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    &-link {
+      font-weight: 500;
+      line-height: 20px;
+      margin-left: 16px;
+    }
+    &-networks {
+      display: flex;
+    }
+  }
+  &__info-link + &__info-link {
+    margin-left: 48px;
   }
 }
