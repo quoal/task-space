@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Space</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,6 +14,7 @@
   </head>
 
   <body>
+    <!-- Шапка сайта -->
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -33,37 +34,64 @@
         </div>
       </div>
     </header>
-    <section class="wrapper">
+    <div class="wrapper">
+      <!-- Блок с основной информацией -->
       <main class="main">
+        <!-- Блок со слайдером -->
         <div class="info-slider">
           <div class="container">
-            <div class="info-slider__item">
-              <h1 class="info-slider__title">
-                <span>Как бизнесу сохранять</span>IT-кадры на фоне кризиса
-              </h1>
-              <p class="info-slider__descr">
-                Инструменты, которые могут использовать компании для удержания сотрудников
-              </p>
-              <a class="info-slider__btn" href="#">Подробнее</a>
+            <div class="slider">
+              <div class="info-slider__item">
+                <h1 class="info-slider__title">
+                  <span>Как бизнесу сохранять</span>IT-кадры на фоне кризиса
+                </h1>
+                <p class="info-slider__descr">
+                  Инструменты, которые могут использовать компании для удержания сотрудников
+                </p>
+              </div>
+              <div class="info-slider__item">
+                <h1 class="info-slider__title">
+                  <span>Lorem, ipsum dolor.</span>lorem ipsum dolor sit amet consectetur.
+                </h1>
+                <p class="info-slider__descr">
+                  Инструменты, которые могут использовать компании для удержания сотрудников
+                </p>
+              </div>
+              <div class="info-slider__item">
+                <h1 class="info-slider__title">
+                  <span>Lorem ipsum dolor sit.</span>lorem, ipsum dolor.
+                </h1>
+                <p class="info-slider__descr">
+                  Инструменты, которые могут использовать компании для удержания сотрудников
+                </p>
+              </div>
             </div>
+            <a class="info-slider__btn" href="#">Подробнее</a>
           </div>
         </div>
+        <!-- Блок статей -->
         <div class="titles">
           <div class="container">
             <div class="titles__search">
-              <select class="search-name" name="select">
-                <option class="search-name__item" selected>Выбор автора</option>
-                <option class="search-name__item" value="value1">Значение 1</option>
-                <option class="search-name__item" value="value2">Значение 2</option>
-                <option class="search-name__item" value="value3">Значение 3</option>
-              </select>
+              <!-- Выбор автора -->
+              <div class="select-wrapper">
+                <select name="select">
+                  <option class="search-name__item" selected>Выбор автора</option>
+                  <option class="search-name__item" value="value1">Lorem, ipsum.</option>
+                  <option class="search-name__item" value="value2">Lorem, ipsum.</option>
+                  <option class="search-name__item" value="value3">Lorem aoraaq</option>
+                </select>
+              </div>
+              <!-- Выбор цен -->
               <div class="prices">
                 <input class="prices__from" placeholder="От" type="text" />
                 <div class="prices__minus">
-                  <input class="prices__to" placeholder="До" type="text" />
+                  <img src="./images/minus.svg" alt="" />
                 </div>
+                <input class="prices__to" placeholder="До" type="text" />
               </div>
             </div>
+            <!-- Статьи -->
             <div class="titles__content">
               <div class="titles__content-item">
                 <p class="titles__content-date">12 июня 2022</p>
@@ -123,6 +151,7 @@
           </div>
         </div>
       </main>
+      <!-- Футер сайта -->
       <footer class="footer">
         <div class="container">
           <div class="footer__additionally">
@@ -155,8 +184,8 @@
           </div>
         </div>
       </footer>
-    </section>
+    </div>
 
-    <script src="js/main.min.js"></script>
+    <script src="./js/main.min.js"></script>
   </body>
 </html>
