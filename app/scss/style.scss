@@ -5,11 +5,17 @@
 @import 'global';
 
 .header {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100000;
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 88px;
+    z-index: 100;
   }
 }
 .contacts {
@@ -22,8 +28,7 @@
 }
 .info-slider {
   padding-bottom: 181px;
-  padding-top: 100px;
-  // background: linear-gradient(100.68deg, #5991ff 13.6%, #0050ef 94.69%);
+  padding-top: 188px;
   background-image: url('../images/bg-main.jpg');
   background-position: center center;
   background-repeat: no-repeat;
@@ -35,13 +40,13 @@
   &__title {
     font-weight: 600;
     font-size: 40px;
-    color: #ffffff;
+    color: $white-text;
     line-height: 56px;
     max-width: 580px;
     margin-bottom: 24px;
   }
   &__descr {
-    color: #ffffff;
+    color: $white-text;
     margin-bottom: 48px;
     max-width: 480px;
   }
@@ -51,7 +56,7 @@
     padding: 16px 32px;
     background-color: #ffffff;
     border-radius: 10px;
-    margin-bottom: 130px;
+
     font-weight: 600;
     line-height: 19px;
     &:hover {
@@ -62,7 +67,7 @@
 .main {
   background-color: #f7f9ff;
 }
-.titles {
+.articles {
   padding-top: 40px;
 
   &__search {
@@ -140,20 +145,25 @@
   }
 }
 
-.titles__content {
+.articles__content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 60px;
   &-item {
-    background: #ffffff;
+    background: $auther-bg;
     border-radius: 20px;
     padding: 24px;
     width: 572px;
     margin-bottom: 20px;
+    transition: 0.4s;
+
+    &:hover {
+      transform: scale(1.04);
+    }
   }
   &-date {
-    color: #10b2d0;
+    color: $auther-date;
     font-size: 12px;
     font-weight: 600;
     line-height: 18px;
@@ -167,20 +177,21 @@
     color: rgba(0, 0, 0, 0.65);
   }
   &-text {
-    color: #888888;
+    color: $title-text;
     margin-bottom: 24px;
   }
 
   &-auther {
-    color: #0050ef;
+    color: $auther-name;
     font-size: 12px;
     line-height: 18px;
     font-weight: 600;
-    background-color: rgba(0, 80, 239, 0.06);
+    background-color: $auther-bg-btn;
     border-radius: 10px;
     padding: 8px 20px;
+    width: 124px;
     &:hover {
-      background-color: rgba(0, 80, 239, 0.2);
+      background-color: $auther-bg-hover;
     }
   }
 }
@@ -242,8 +253,18 @@
   margin-left: 6px;
 }
 .slider {
-  flex-basis: 574px;
+  max-width: 574px;
 }
 .slick-active button {
   background-color: #fff;
+}
+
+.stickytop-search {
+  position: fixed;
+  width: 100%;
+  top: 88px;
+  z-index: 1000;
+}
+form {
+  display: inherit;
 }
